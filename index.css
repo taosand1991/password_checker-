@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    height: 500px;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 5px rgba(14, 241, 102, 0.5)
+}
+
+.password-header{
+    padding: 10px;
+    margin: 30px auto;
+    font-size: 1.6rem;
+}
+
+.password-body {
+    display: flex;
+    padding: 4px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+.checker #password-color {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 5px;
+    border-radius: 3px;
+    transition: width .5s linear;
+    background-color: rgb(216, 197, 197)
+
+}
+
+.checker #inner-color{
+    position: absolute;
+    content: '';
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 3px;
+    transition: width .5s linear;
+}
+
+.password-input {
+    appearance: none;
+    border: none;
+    padding: 10px 15px;
+    background: rgb(238, 229, 229);
+    width: 200px;
+    border-radius: 5px;
+    color: green;
+    margin-right: 45px;
+}
+
+.checker {
+    justify-content: center;
+    align-items: center;
+    display: none;
+    flex-direction: column;
+}
+
+#pass-name {
+    text-align: center;
+    transition: .5s linear;
+}
+
+input:focus{
+    border: none;
+    appearance: none;
+    outline: 2px solid green;
+}
+
+.password-instruct {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start !;
+    align-items: flex-start;
+    margin-top: 5px;
+    padding: 3px 8px;
+    font-style: italic;
+}

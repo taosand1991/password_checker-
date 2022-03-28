@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Password Checker</title>
+</head>
+<body>
+  <main>
+      <div class='password-header'>
+          <h5>Password Checker</h5>
+      </div>
+      <div class="password-body">
+          <input id='password'  type="password" class="password-input"/>
+          <div class="checker">
+            <span id="password-color">
+                <span id="inner-color"></span>
+            </span>
+            <p id='pass-name'></p>
+          </div>
+      </div>
+      <div class="password-instruct">
+          <small id="uppercase">password must contain at least one uppercase letter </small>
+          <small id="lowercase">password must contain at least one lowercase letter </small>
+          <small id="number">password must contain at least a number </small>
+          <small id="special-character">password must contain at least a special character </small>
+      </div>
+  </main> 
+  <script src="index.js" defer></script> 
+</body>
+
+
+</html>
